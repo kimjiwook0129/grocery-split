@@ -10,10 +10,15 @@ const App: React.FC = () => {
   const [currency, setCurrency] = useState<string>(currencies[0]);
   const [items, setItems] = useState<number>(1);
   const [people, setPeople] = useState<number>(1);
-  const [data, setData] = useState<{ price: number; portions: number[] }[]>([]);
+  const [data, setData] = useState<{ item: string; price: number; portions: number[]; price_per_portion: number; }[]>([]);
+  const [names, setNames] = useState<string[]>([]);
 
-  const handleDataChange = (newData: { price: number; portions: number[] }[]) => {
+  const handleDataChange = (
+    newData: {item: string; price: number; portions: number[]; price_per_portion: number; }[],
+    newNames: string[]
+    ) => {
     setData(newData);
+    setNames(newNames);
   };
 
   const exportTable = () => {
@@ -21,11 +26,11 @@ const App: React.FC = () => {
     console.log('Exporting table...');
   };
 
-  const columns = ['Item', 'Price', ...Array.from({ length: people }, (_, i) => `Name${i + 1}`), 'Amt/Portion'];
-
   return (
     <div className="App">
-      <h1>GrocerySplit</h1>
+      <div className="title-container">
+        <h1>GrocerySplit</h1><img src="image.png" alt="GrocerySplit Image"></img>
+      </div>
       <Settings
         currency={currency}
         setCurrency={setCurrency}
@@ -36,7 +41,7 @@ const App: React.FC = () => {
         exportTable={exportTable}
       />
       <Table items={items} people={people} onDataChange={handleDataChange} />
-      <TotalTable items={items} people={people} columns={columns} data={data} />
+      <TotalTable data={data} names={names}/>
     </div>
   );
 };
