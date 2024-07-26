@@ -1,0 +1,33 @@
+   .settings-container {
+    display: flex;
+    gap: 20px; 
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+
+  .setting-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .setting-item label {
+    margin-right: 5px;
+  }
+  
+  .item-controls {
+    display: flex;
+    align-items: center;
+  }
+  
+  .item-controls input {
+    width: 40px;
+    text-align: center;
+    margin-right: 5px; 
+  }
+  
+  .item-controls button {
+    margin-left: 5px; 
+  }
+  

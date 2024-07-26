@@ -1,0 +1,26 @@
+   .total-table-container {
+    margin-top: 20px;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+  
+  .total-table-container table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .total-table-container th, .total-table-container td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .total-table-container th {
+    background-color: #f2f2f2;
+  }
+  
+  .total-table-container td input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
