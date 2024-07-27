@@ -2,7 +2,8 @@
 
 **Grocery Split** is a web application designed to simplify the process of splitting grocery bills among friends. The application is hosted at [grocerysplit.edwardjwkim.com](http://grocerysplit.edwardjwkim.com).
 
-**For now, I would recommend using Grocery Split from a computer or tablet browser.**
+**For now, I recommend using Grocery Split from a computer or tablet browser. If using a mobile device, please use it in horizontal orientation.**
+
 
 
 ### Background
