@@ -31,3 +31,8 @@
     margin-left: 5px; 
   }
   
+  select:disabled,
+button:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}

@@ -44,6 +44,7 @@ const Settings: React.FC<SettingsProps> = ({
           id="currency"
           value={currency}
           onChange={(e) => setCurrency(e.target.value)}
+          disabled
         >
           {currencies.map((cur) => (
             <option key={cur} value={cur}>
@@ -72,7 +73,7 @@ const Settings: React.FC<SettingsProps> = ({
       </div>
       
       <div className="setting-item">
-        <button onClick={exportTable}>Export Table</button>
+        <button onClick={exportTable} disabled>Export Table</button>
       </div>
     </div>
   );
