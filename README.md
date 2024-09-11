@@ -4,6 +4,18 @@
 
 **For now, I recommend using Grocery Split from a computer or tablet browser. If using a mobile device, please use it in horizontal orientation.**
 
+<img src="public/screenshot.png" alt="Grocery Split screenshot" />
+
+### Instructions
+
+1. **Enter the number of people and items**: You can add up to 10 people and 100 items for splitting.
+
+2. **Input the item details**: For each item on your receipt, enter its name, price, and the portion each person consumed. For example, if you bought 10 bananas for $2.59, and Edward ate 4, David ate 3, and Jiwook ate 3, input the portions as 4, 3, and 3 for Edward, David, and Jiwook respectively.
+
+3. **Adjust for tax or discounts**: After all the item prices and portions are entered, input the total tax amount. If there was a discount, enter it as a negative number or adjust the tax - discount value to match the total amount on your receipt.
+
+4. **Review totals**: The total amount for each person will be displayed in the "Total" row, indicating how much each individual owes.
+
 
 
 ### Background
